@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Lockout Right Mouse Button</title> 
+<script language=JavaScript> 
+function BreakInDetected(){ 
+alert('Security Violation') 
+return false 
+} 
+document.oncontextmenu=new Function( "BreakInDetected();return false") 
+</script> 
+</head> 
+<body> 
+<h1> Right Mouse Button Disabled Example</h1> 
+</body> 
+</html>

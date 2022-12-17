@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="commonFrame.js"></script>
+    <link rel="stylesheet" href="commonFrame.css">
+    <script>
+        function emailValidate(){
+
+        }
+        function BreakInDetected(){ 
+alert('Security Violation') 
+return false 
+} 
+document.oncontextmenu=new Function( "BreakInDetected();return false") 
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <img class="topimg" src="Styamev Jayate.png" alt="satyamev jayate logo" width="100" height="100">
+        <img class="topimg2" src="azadi-ka-amrit-mahotsav.png" width="100" height="100">
+        <center>
+            <h3 id="text">Gram-Panchayat Gargoti </h3>
+        </center>
+    </div>
+    <div class="topnav">
+        <a id="home" href="commonFrame.html" onmouseover="newColor(this.id)" onmouseout="oldColor(this.id)"
+        onclick="newColor(this.id)">Home</a>
+        <a id="scheme" href="schemes.html" onmouseover="newColor(this.id)" onmouseout="oldColor(this.id)">Schemes</a>
+        <a id="contact" href="contact.html" onmouseover="newColor(this.id)" style="background-color: red;">Suggestion/Problem</a>
+        <a id="about" href="" onmouseover="newColor(this.id)" onmouseout="oldColor(this.id)">About</a>
+    </div>
+    <div>
+        <p>Solve your local problems or give suggestion at one click.</p>
+
+        <form name="contact" action="">
+        <table>
+            <p>एकच ध्यास गावचा विकास </p>
+            <h4>Fill the form</h4>
+            <tr>
+                <td>
+                    <label for="Fname">First Name: </label>
+                </td>
+                <td>
+                    <input type="text" id="Fname" name="fname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Mname">Middle Name: </label>
+                </td>
+                <td>
+                    <input type="text" id="Mname" name="Mname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Lname">Last Name: </label>
+                </td>
+                <td>
+                <input type="text" id="Lname" name="Lname">
+            </td>
+            </tr>
+            <tr>
+                <td>
+                <label for="email">Email id: </label>
+            </td>
+            <td>
+                <input type="mail" id="email" onchange="emailValidate(this.value)">
+            </td>
+            </tr>
+            <tr>
+                    <td>
+                        <label for="mobile">Mobile no.: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="mobile" name="phone">
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="colony">Colony/Lane Name:</label>
+                </td>
+                <td>
+                <input type="text" id="colony">
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="laneno">Lane Number: </label>
+                </td>
+                <td>
+                    <input type="number" id="laneno" value="0"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <h4>Write your problem/query: </h4>
+                </td>
+            </tr>
+            <tr aria-colspan="2">
+                <td colspan="2">
+                    <textarea cols="60" rows="5"> </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <input type="submit" value="Submit Query">
+                <input type="reset" value="Reset">
+            </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+</body>
+</html>

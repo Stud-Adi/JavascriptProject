@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grampanchayat Login</title>
+
+    <script>
+        function validateUser() {
+            with (document.forms.loginForm) {
+                let username = uname.value;
+                let pass = document.getElementById("password").value;
+                var msg = ""
+                var error = document.getElementById("error")
+                var userField = document.getElementById("username")
+                
+                if (username == "gargotipanchayat@gmail.com") {
+                    if (pass == "admin") {
+                        userField.style.borderColor="#ffffff"
+                        document.getElementById("password").style.borderColor="#ffffff"
+                        error.textContent = ""
+                        document.cookie="username="+username+"pass="+pass;
+                        alert("Login successful")                       
+                    }
+                    else {
+                        document.getElementById("password").style.borderColor="#FF0000"
+                        error.textContent = "Please enter a valid password"
+                        error.style.color = "red"
+                    }
+                }
+                else {
+                    error.textContent = "Please enter a valid username and password"
+                    error.style.color = "red"
+                    userField.style.borderColor="#FF0000"
+                }
+            }
+        }
+    </script>
+</head>
+ 
+<body>
+    <form name="loginForm" id="login" method="">
+        <table width="345" name="logintable">
+            <tr>
+                <th height="39" colspan="2">
+                    <h3>Grampanchayat Login</h3>
+                </th>
+            </tr>
+            <tr>
+                <th height="34"><label for="username">Username</label></th>
+                <td><input type="email" name="uname" id="username" required /></td>
+            </tr>
+            <tr>
+                <th height="34"><label for="password">Password</label></th>
+                <td><input type="password" name="pass" id="password" /></td>
+            </tr>
+            <span>
+            <tr>
+                <th height="0" colspan="2"> <span id="error"></span></th>
+            </tr>
+        </span>
+            <tr>
+                <th height="39" colspan="2"><input type="button" value="Sign In" onclick="validateUser()" />
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

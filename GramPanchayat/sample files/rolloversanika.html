@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Slider</title>
+        <link rel="stylesheet" href="style.css"></link>
+
+        <script>
+           
+            function first(){
+                document.getElementById("slideimage").src="slide1.jpg";
+            }
+            function second(){
+                document.getElementById("slideimage").src="slide2.jpg";
+            }
+            function third(){
+                document.getElementById("slideimage").src="slide3.jpg";
+            }
+            setInterval(first, 2000);
+            setInterval(second, 4000);
+            setInterval(third, 6000);
+
+
+            function changeImg(imgchanger){
+                document.getElementById('slider').src = imgchanger;
+            }
+  </script>
+ </head>
+
+ <!-- <frameset rows="30%,60%,10%">
+    <frame name="A" src="header.html"></frame>
+         <frame name="B" src="left.html"> 
+              -->
+      <!-- <frameset cols="100%"> 
+        <frame name="B" src="left.html">  --> 
+        <!-- <frame name = "main" src = "/html/foot.html" /> -->
+        <!-- <frame name = "bottom" src = "/html/bottom_frame.htm" /> -->
+        <!-- <frame name="B" src="header.html"> -->
+          <!-- <frame name="C" src="slider.html">
+      </frameset> -->
+       <!-- <frame name="B" src="foot.html"> 
+        <frameset rows="100%">
+        </frameset> 
+ </frameset> -->
+<body>   
+
+  <div id="main">
+    <img src="images/RajVeer Medical.jpg" id="slideimage">
+       
+             <div class="navigate" id="main" >     
+              <div class="nav-area">
+<!--                 
+                <table> 
+                    <tr><td> -->
+                        <ul>      
+                            <li><a href="#" onmouseover="changeImg('slide1.jpg')">Aspirin</a></li>
+                            <li><a href="#" onmouseover="changeImg('slide2.jpg')">Ketoprofen</a></li>
+                            <li><a href="#" onmouseover="changeImg('slide3.jpf')">Sbecaplermin</a></li>
+                        </ul></td></tr>
+                        <!-- </table>
+                
+                        <table> 
+                        <tr><td> -->
+                        <ul>
+                            <li><a href="#" onmouseover="changeImg('images/benadrylaller.jpg')">Acrivastine</a></li>
+                            <li><a href="#" onmouseover="changeImg('images/benadrylaller.jpg')">ibandronate</a></li>
+                            <li><a href="#" onmouseover="changeImg('images/benadrylaller.jpg')">paracetamol</a></li></a></li>
+                            </ul>
+                          <!-- </td></tr> -->
+                            <!-- </table>
+                
+                            <table> 
+                            <tr><td> -->
+                            <ul>
+                            <li><a href="#" onmouseover="changeImg('images/benadrylaller.jpg')">Antihistamines </a></li>
+                            <li><a href="#" onmouseover="changeImg('images/benadrylaller.jpg')">Antiseptics </a></li>
+                            <li><a href="#" onmouseover="changeImg('images/benadrylaller.jpg')">baclofen </a></li>
+                            </ul>
+                          <!-- </td></tr></table> -->
+
+
+                            <div >
+                              <div >
+                                  <img src="images/md3.jpg" alt="" id="slider">
+                               <!-- </div> 
+                               </div>
+               </div></div></div></div> -->
+
+               <form action="order.html">        
+
+              <input type="submit" value="Submit"></div></form></body>
+                 </div> 
+                               </div>
+               </div></div></div></div>
+
+                 <!-- <a href="order.html"></a> -->
+</body> 
+
+</html>
